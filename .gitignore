@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+streamlit_env/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Данные (большие файлы - добавьте model через Git LFS)
+data/
+*.csv
+
+# Временные файлы
+.DS_Store
+*.log
+*.tmp
+
+# Streamlit secrets (не коммитьте секреты!)
+.streamlit/secrets.toml
+
+# Ноутбуки (опционально, если не хотите их в репозитории)
+# *.ipynb
+
+# Модель через Git LFS (комментарий - файл будет отслеживаться через LFS)
+# best_pipeline_final.pkl
+
