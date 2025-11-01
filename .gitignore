@@ -25,10 +25,8 @@ build/
 data/
 *.csv
 
-# Модель (слишком большая для GitHub без LFS - 108 MB)
-*.pkl
-*.pickle
-best_pipeline_final.pkl
+# Модель добавляется через Git LFS (см. .gitattributes)
+# *.pkl не игнорируется, так как отслеживается через LFS
 
 # Временные файлы
 .DS_Store
@@ -37,6 +35,10 @@ best_pipeline_final.pkl
 
 # Streamlit secrets (не коммитьте секреты!)
 .streamlit/secrets.toml
+
+# Локальные скрипты (не нужны для Streamlit)
+save_model.py
+add_model.sh
 
 # Ноутбуки (опционально, если не хотите их в репозитории)
 # *.ipynb
